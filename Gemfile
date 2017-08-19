@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem 'httpclient'
+gem "httpclient", "2.8.3", git: "https://github.com/stergiom/httpclient", branch: "fix-for-too-big-for-int"
 
 platform = $platform || RUBY_PLATFORM[/java/] || 'ruby'
  if platform != 'java'
